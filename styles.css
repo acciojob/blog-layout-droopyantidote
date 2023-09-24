@@ -1,1 +1,40 @@
-/*  your css code here. If applicable */
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex-basis: calc(25% - 20px);
+            margin: 10px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .column h2 {
+            font-size: 18px;
+        }
+
+        .article {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .column {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .column {
+                flex-basis: 100%;
+            }
+        }
